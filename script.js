@@ -14,8 +14,9 @@ reset.addEventListener('click', () => {
     if(typeof(num) !== 'number') {
         alert('ERROR')
     }
-    else {
-        createGrid(num)
+    else if(num <= 100) {
+        grid.innerHTML = '';
+        createGrid(num);
     }
 })
 
