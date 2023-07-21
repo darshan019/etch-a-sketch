@@ -41,11 +41,7 @@ function createGrid(num) {
 
         rainbow.addEventListener('click',() => {
             cell.addEventListener('mouseover', () => {
-                let color = '#'
-                let arr = [1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
-                for(let i = 0; i < 6; i++) {
-                    color += arr[Math.floor(Math.random()*arr.length)]
-                }
+                let color = `rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`
                 cell.style.backgroundColor = color
             })
         
